@@ -1,0 +1,11 @@
+{
+    "watch": [
+        "src"
+    ],
+    "ext": "ts",
+    "exec": "babel-node -x .ts src/index.ts",
+    "env": {
+        "PORT": "8091",
+        "NODE_ENV": "test"
+    }
+}

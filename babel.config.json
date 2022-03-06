@@ -1,0 +1,32 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "node": "current"
+                }
+            }
+        ],
+        "@babel/preset-typescript",
+        "babel-preset-minify"
+    ],
+    "plugins": [
+        [
+            "babel-plugin-module-resolver",
+            {
+                "root": "./src",
+                "alias": {
+                    "types": "./src/types",
+                    "config": "./src/config",
+                    "utils": "./src/utils",
+                    "models": "./src/models",
+                    "api": "./src/api"
+                }
+            }
+        ]
+    ],
+    "ignore": [
+        "./src/types"
+    ]
+}
